@@ -11,7 +11,7 @@
 #import "ImagePickerController.h"
 
 
-#import <opencv2/highgui/cap_ios.h>
+#import <opencv2/videoio/cap_ios.h>
 
 #import "imageFilter.h"
 #import "CvConvolutionController.h"
