@@ -57,6 +57,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		498D015024C8B5810079242C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ViewControllerFaceDetectVideo_iPad.xib; sourceTree = "<group>"; };
+		498D015124C8B5810079242C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ViewControllerFaceDetectVideo_iPhone.xib; sourceTree = "<group>"; };
 		5C046D2C158404EF006D444F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		5C046D2F15840521006D444F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		5C046D3115840535006D444F /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
@@ -65,8 +67,6 @@
 		5C8CDEE615A6287F00D65F6B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C8CDEE715A6287F00D65F6B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5C8CDEE915A6287F00D65F6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5C8CDEEB15A6287F00D65F6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewControllerFaceDetectVideo_iPad.xib; sourceTree = "<group>"; };
-		5C8CDEED15A6287F00D65F6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewControllerFaceDetectVideo_iPhone.xib; sourceTree = "<group>"; };
 		5C8CDEEE15A6287F00D65F6B /* FaceDetectVideo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FaceDetectVideo-Info.plist"; sourceTree = "<group>"; };
 		5C8CDEEF15A6287F00D65F6B /* FaceDetectVideo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FaceDetectVideo-Prefix.pch"; sourceTree = "<group>"; };
 		5C8CDEF015A6287F00D65F6B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -275,11 +275,11 @@
 			};
 			buildConfigurationList = 5CE6B37715821F17009E66E4 /* Build configuration list for PBXProject "FaceDetectVideo" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = 5CE6B37215821F17009E66E4;
 			productRefGroup = 5CE6B37E15821F17009E66E4 /* Products */;
@@ -345,7 +345,7 @@
 		5C8CDEEA15A6287F00D65F6B /* ViewControllerFaceDetectVideo_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5C8CDEEB15A6287F00D65F6B /* en */,
+				498D015024C8B5810079242C /* Base */,
 			);
 			name = ViewControllerFaceDetectVideo_iPad.xib;
 			sourceTree = "<group>";
@@ -353,7 +353,7 @@
 		5C8CDEEC15A6287F00D65F6B /* ViewControllerFaceDetectVideo_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5C8CDEED15A6287F00D65F6B /* en */,
+				498D015124C8B5810079242C /* Base */,
 			);
 			name = ViewControllerFaceDetectVideo_iPhone.xib;
 			sourceTree = "<group>";
@@ -471,7 +471,6 @@
 		5CE6B39F15821F17009E66E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LIBRARY = "libc++";
@@ -497,7 +496,6 @@
 		5CE6B3A015821F17009E66E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LIBRARY = "libc++";
