@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		498D014B24C8A3C80079242C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA03EE61AEDAF760015B2F5 /* opencv2.framework */; };
+		498D014C24C8A3C80079242C /* opencv2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA03EE61AEDAF760015B2F5 /* opencv2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5C046D2D158404EF006D444F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C046D2C158404EF006D444F /* CoreMedia.framework */; };
 		5C046D3015840521006D444F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C046D2F15840521006D444F /* CoreVideo.framework */; };
 		5C046D3215840535006D444F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C046D3115840535006D444F /* CoreImage.framework */; };
@@ -34,12 +36,25 @@
 		5CA03ED51AED9FA50015B2F5 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA03ED01AED9FA50015B2F5 /* UIImage+Alpha.m */; };
 		5CA03ED61AED9FA50015B2F5 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA03ED21AED9FA50015B2F5 /* UIImage+Resize.m */; };
 		5CA03ED71AED9FA50015B2F5 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA03ED41AED9FA50015B2F5 /* UIImage+RoundedCorner.m */; };
-		5CA03EE71AEDAF760015B2F5 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA03EE61AEDAF760015B2F5 /* opencv2.framework */; };
 		5CE6B38215821F17009E66E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE6B38115821F17009E66E4 /* UIKit.framework */; };
 		5CE6B38415821F17009E66E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE6B38315821F17009E66E4 /* Foundation.framework */; };
 		5CE6B38615821F17009E66E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE6B38515821F17009E66E4 /* CoreGraphics.framework */; };
 		5CE6B3AD1582234E009E66E4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE6B3AC1582234E009E66E4 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		498D014D24C8A3C80079242C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				498D014C24C8A3C80079242C /* opencv2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5C046D2C158404EF006D444F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -100,7 +115,7 @@
 				5CE6B3AD1582234E009E66E4 /* AVFoundation.framework in Frameworks */,
 				5CE6B38215821F17009E66E4 /* UIKit.framework in Frameworks */,
 				5CE6B38415821F17009E66E4 /* Foundation.framework in Frameworks */,
-				5CA03EE71AEDAF760015B2F5 /* opencv2.framework in Frameworks */,
+				498D014B24C8A3C80079242C /* opencv2.framework in Frameworks */,
 				5CE6B38615821F17009E66E4 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +256,7 @@
 				5CE6B37915821F17009E66E4 /* Sources */,
 				5CE6B37A15821F17009E66E4 /* Frameworks */,
 				5CE6B37B15821F17009E66E4 /* Resources */,
+				498D014D24C8A3C80079242C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,12 +275,18 @@
 			attributes = {
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Eduard Feicho";
+				TargetAttributes = {
+					5CE6B37C15821F17009E66E4 = {
+						DevelopmentTeam = 55V4KQ8R32;
+					};
+				};
 			};
 			buildConfigurationList = 5CE6B37715821F17009E66E4 /* Build configuration list for PBXProject "FaceDetectVideo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 5CE6B37215821F17009E66E4;
@@ -351,10 +373,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -365,7 +393,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../build/opencv2.framework/Headers/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -376,14 +406,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../build/opencv2.framework/Headers/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -399,6 +437,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 55V4KQ8R32;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../build/\"",
@@ -407,7 +446,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FaceDetectVideo/FaceDetectVideo-Prefix.pch";
 				INFOPLIST_FILE = "FaceDetectVideo/FaceDetectVideo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = "-mfpu=neon";
 				PRODUCT_NAME = FaceDetectVideo;
 				WRAPPER_EXTENSION = app;
@@ -422,6 +462,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 55V4KQ8R32;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../build/\"",
@@ -430,7 +471,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FaceDetectVideo/FaceDetectVideo-Prefix.pch";
 				INFOPLIST_FILE = "FaceDetectVideo/FaceDetectVideo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"-mfpu=neon",

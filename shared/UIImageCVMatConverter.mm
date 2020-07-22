@@ -116,7 +116,7 @@
         grayMat = cvMat;
 	} else{
         grayMat = cv :: Mat(cvMat.rows,cvMat.cols, CV_8UC1);
-        cv::cvtColor(cvMat, grayMat, CV_BGR2GRAY);
+        cv::cvtColor(cvMat, grayMat, cv::COLOR_BGR2GRAY);
     }
 	return grayMat;
 }

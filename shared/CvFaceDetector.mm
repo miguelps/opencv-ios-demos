@@ -79,8 +79,8 @@
 	// haar detect
 	float haar_scale = 1.15;
 	int haar_minNeighbors = 3;
-	int haar_flags = 0 | CV_HAAR_SCALE_IMAGE | CV_HAAR_DO_CANNY_PRUNING;
-	cv::Size haar_minSize = cvSize(60, 60);
+    int haar_flags = 0 | CASCADE_SCALE_IMAGE | CASCADE_DO_CANNY_PRUNING;
+	cv::Size haar_minSize = cv::Size(60, 60);
 	
 	face_cascade->detectMultiScale(*grayMat, faces, haar_scale,
                                    haar_minNeighbors, haar_flags, haar_minSize );
