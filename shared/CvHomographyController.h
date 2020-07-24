@@ -7,27 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-
 #import <Accelerate/Accelerate.h>
-
 #include "opencv2/core/core.hpp"
-
-
 
 #ifdef __cplusplus
 
 #include "opencv2/features2d/features2d.hpp"
-#include "opencv2/nonfree/features2d.hpp"
 #include "opencv2/calib3d/calib3d.hpp"
-using namespace cv;
+#include "opencv2/features2d.hpp"
 
 #include <list>
+
 using namespace std;
+using namespace cv;
 
 #endif
-
-
-
 
 enum CVFeatureDetectorType {
 	CV_FEATUREDETECTOR_FAST,
@@ -39,15 +33,11 @@ enum CVFeatureDetectorType {
 	CV_FEATUREDETECTOR_SURF,
 };
 
-
-
 enum CVFeatureDescriptorType {
 	CV_FEATUREDESCRIPTOR_SIFT,
 	CV_FEATUREDESCRIPTOR_SURF,
 	CV_FEATUREDESCRIPTOR_ORB
 };
-
-
 
 @interface CvHomographyController : NSObject
 {
@@ -118,10 +108,8 @@ enum CVFeatureDescriptorType {
 
 - (void)adaptThreshold:(int)numFeatures;
 
-
 - (void)setDetectorThreshold:(int)threshold;
 - (NSString*)getDetectorThresholdName;
-
 
 - (void)useORB;
 - (void)useSIFT;
@@ -140,7 +128,6 @@ enum CVFeatureDescriptorType {
 - (void)drawScene;
 
 - (void)drawKeypoints;
-
 
 - (UIImage*)getObjectImage;
 
