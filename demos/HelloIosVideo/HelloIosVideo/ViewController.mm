@@ -63,12 +63,12 @@
 {
     // Do some OpenCV stuff with the image
     
-    Mat image_copy;
-    cvtColor(image, image_copy, cv::COLOR_BGRA2BGR);
-    
-    // invert image
-    bitwise_not(image_copy, image_copy);
-    cvtColor(image_copy, image, cv::COLOR_BGR2BGRA);
+//    Mat image_copy;
+//    cvtColor(image, image_copy, cv::COLOR_BGRA2BGR);
+//    
+//    // invert image
+//    bitwise_not(image_copy, image_copy);
+//    cvtColor(image_copy, image, cv::COLOR_BGR2BGRA);
 }
 #endif
 
