@@ -60,7 +60,7 @@
 		5CA03F361AEDB9260015B2F5 /* UIImageCVMatConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIImageCVMatConverter.h; path = ../../shared/UIImageCVMatConverter.h; sourceTree = "<group>"; };
 		5CA03F371AEDB9260015B2F5 /* UIImageCVMatConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = UIImageCVMatConverter.mm; path = ../../shared/UIImageCVMatConverter.mm; sourceTree = "<group>"; };
 		5CA03F3B1AEDB9670015B2F5 /* ViewControllerVideoConvolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerVideoConvolution.h; path = ../../shared/ViewControllers/ViewControllerVideoConvolution.h; sourceTree = "<group>"; };
-		5CA03F3C1AEDB9670015B2F5 /* ViewControllerVideoConvolution.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ViewControllerVideoConvolution.mm; path = ../../shared/ViewControllers/ViewControllerVideoConvolution.mm; sourceTree = "<group>"; };
+		5CA03F3C1AEDB9670015B2F5 /* ViewControllerVideoConvolution.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ViewControllerVideoConvolution.mm; path = ../../shared/ViewControllers/ViewControllerVideoConvolution.mm; sourceTree = "<group>"; };
 		5CD8E83D15A222E700AB1240 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -387,9 +387,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_CPP_STATIC_DESTRUCTORS = NO;
 				DEVELOPMENT_TEAM = 55V4KQ8R32;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VideoConvolution/VideoConvolution-Prefix.pch";
 				INFOPLIST_FILE = "VideoConvolution/VideoConvolution-Info.plist";
@@ -404,9 +406,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_CPP_STATIC_DESTRUCTORS = NO;
 				DEVELOPMENT_TEAM = 55V4KQ8R32;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VideoConvolution/VideoConvolution-Prefix.pch";
 				INFOPLIST_FILE = "VideoConvolution/VideoConvolution-Info.plist";
