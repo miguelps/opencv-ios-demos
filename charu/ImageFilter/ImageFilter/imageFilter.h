@@ -6,14 +6,11 @@
 //  Copyright (c) 2012 University of Houston - Main Campus. All rights reserved.
 //
 
-
-
 #ifdef __cplusplus
 
 #include <opencv2/core/core.hpp>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/calib3d/calib3d.hpp>
-//#include <opencv2/contrib/contrib.hpp>
 #include <opencv2/objdetect/objdetect.hpp>
 #include <opencv2/opencv.hpp>
 #include <opencv2/opencv_modules.hpp>
@@ -21,17 +18,12 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/photo/photo.hpp>
 
-
-
 #endif
 #import <UIKit/UIKit.h>
 
 @interface imageFilter : NSObject
 
 -(UIImage *)processImage:(UIImage *)inputImage oldImage:(UIImage *)maskImage number:(int)randomNumber sliderValueOne:(float)valueOne sliderValueTwo:(float)valueTwo;
-
-
-
 
 #ifdef __cplusplus
 
@@ -64,7 +56,5 @@
 -(cv::Mat)brightnessContrastEnhanceConversion:(cv::Mat)inputMat betaValue:(float)beta alphaValue:(float)alpha;
 
 #endif
-
-
 
 @end

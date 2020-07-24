@@ -10,12 +10,10 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "ImagePickerController.h"
 
-
 #import <opencv2/videoio/cap_ios.h>
 
 #import "imageFilter.h"
 #import "CvConvolutionController.h"
-
 
 @interface ViewControllerVideoFilter : UIViewController<CvVideoCameraDelegate, UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 {
@@ -27,6 +25,7 @@
     
     BOOL enablePixelize;
     BOOL enableInvert;
+    BOOL enableSepia;
     BOOL enableRetro;
     BOOL enableSoftFocus;
     BOOL enableCartoon;
@@ -50,7 +49,6 @@
 
 @property (nonatomic, retain) CvVideoCamera* videoCamera;
 @property (nonatomic, retain) imageFilter* imageFilterController;
-
 @property (nonatomic, retain) ImagePickerController* imagePicker;
 
 - (IBAction)actionPixelize:(id)sender;
@@ -63,13 +61,10 @@
 - (IBAction)actionSobel:(id)sender;
 - (IBAction)actionCanny:(id)sender;
 
-
 - (IBAction)actionEnableProcessing:(id)sender;
 
 - (IBAction)saveVideo:(id)sender;
 
-
 - (IBAction)showPhotoLibrary:(id)sender;
-
 
 @end
