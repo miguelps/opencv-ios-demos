@@ -7,21 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49A76FB024CB643400876489 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A76FAF24CB643400876489 /* opencv2.framework */; };
+		49A76FB324CB65DE00876489 /* opencv2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49A76FAF24CB643400876489 /* opencv2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5C6BFC841588F79400F7692B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6BFC831588F79400F7692B /* UIKit.framework */; };
 		5C6BFC861588F79400F7692B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6BFC851588F79400F7692B /* Foundation.framework */; };
-		5C6BFC881588F79400F7692B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6BFC871588F79400F7692B /* CoreGraphics.framework */; };
 		5C6BFC8E1588F79400F7692B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C6BFC8C1588F79400F7692B /* InfoPlist.strings */; };
 		5C6BFC901588F79400F7692B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BFC8F1588F79400F7692B /* main.m */; };
 		5C6BFC941588F79400F7692B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BFC931588F79400F7692B /* AppDelegate.m */; };
 		5C6BFC9A1588F79400F7692B /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C6BFC981588F79400F7692B /* ViewController_iPhone.xib */; };
 		5C6BFC9D1588F79400F7692B /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C6BFC9B1588F79400F7692B /* ViewController_iPad.xib */; };
-		5C6BFCA41588F7AB00F7692B /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6BFCA31588F7AB00F7692B /* opencv2.framework */; };
-		5C6BFCAC1588F7ED00F7692B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6BFCAB1588F7ED00F7692B /* QuartzCore.framework */; };
-		5C6BFCAE1588F7F300F7692B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6BFCAD1588F7F300F7692B /* CoreVideo.framework */; };
 		5C6BFCB01588F7FA00F7692B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6BFCAF1588F7FA00F7692B /* AVFoundation.framework */; };
-		5C6BFCB21588F80000F7692B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6BFCB11588F80000F7692B /* CoreMedia.framework */; };
-		5C6BFCB41588F80600F7692B /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6BFCB31588F80600F7692B /* CoreImage.framework */; };
-		5C89EC4E15E003AF002183F7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C89EC4D15E003AE002183F7 /* AssetsLibrary.framework */; };
 		5CA03F061AEDB5EE0015B2F5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA03F051AEDB5EE0015B2F5 /* Media.xcassets */; };
 		5CA03F381AEDB9260015B2F5 /* CvConvolutionController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CA03F331AEDB9260015B2F5 /* CvConvolutionController.mm */; };
 		5CA03F391AEDB9260015B2F5 /* ImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA03F351AEDB9260015B2F5 /* ImagePickerController.m */; };
@@ -30,26 +25,33 @@
 		5CD8E83E15A222E700AB1240 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD8E83D15A222E700AB1240 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		49A76FB224CB65CE00876489 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				49A76FB324CB65DE00876489 /* opencv2.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		49A76FAB24CB567800876489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		49A76FAC24CB567800876489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		49A76FAF24CB643400876489 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../build/opencv2.framework; sourceTree = "<group>"; };
 		5C6BFC7F1588F79400F7692B /* VideoConvolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoConvolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C6BFC831588F79400F7692B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5C6BFC851588F79400F7692B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		5C6BFC871588F79400F7692B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5C6BFC8B1588F79400F7692B /* VideoConvolution-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoConvolution-Info.plist"; sourceTree = "<group>"; };
 		5C6BFC8D1588F79400F7692B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C6BFC8F1588F79400F7692B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5C6BFC911588F79400F7692B /* VideoConvolution-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoConvolution-Prefix.pch"; sourceTree = "<group>"; };
 		5C6BFC921588F79400F7692B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C6BFC931588F79400F7692B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5C6BFC991588F79400F7692B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		5C6BFC9C1588F79400F7692B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
-		5C6BFCA31588F7AB00F7692B /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../ocv.build/ios/opencv2.framework; sourceTree = "<group>"; };
-		5C6BFCAB1588F7ED00F7692B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		5C6BFCAD1588F7F300F7692B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		5C6BFCAF1588F7FA00F7692B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		5C6BFCB11588F80000F7692B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		5C6BFCB31588F80600F7692B /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		5C89EC4D15E003AE002183F7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		5CA03F051AEDB5EE0015B2F5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../../shared/Media.xcassets; sourceTree = "<group>"; };
 		5CA03F321AEDB9260015B2F5 /* CvConvolutionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CvConvolutionController.h; path = ../../shared/CvConvolutionController.h; sourceTree = "<group>"; };
 		5CA03F331AEDB9260015B2F5 /* CvConvolutionController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CvConvolutionController.mm; path = ../../shared/CvConvolutionController.mm; sourceTree = "<group>"; };
@@ -68,16 +70,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CD8E83E15A222E700AB1240 /* Accelerate.framework in Frameworks */,
-				5C89EC4E15E003AF002183F7 /* AssetsLibrary.framework in Frameworks */,
-				5C6BFCB41588F80600F7692B /* CoreImage.framework in Frameworks */,
-				5C6BFCB21588F80000F7692B /* CoreMedia.framework in Frameworks */,
 				5C6BFCB01588F7FA00F7692B /* AVFoundation.framework in Frameworks */,
-				5C6BFCAE1588F7F300F7692B /* CoreVideo.framework in Frameworks */,
-				5C6BFCAC1588F7ED00F7692B /* QuartzCore.framework in Frameworks */,
 				5C6BFC841588F79400F7692B /* UIKit.framework in Frameworks */,
 				5C6BFC861588F79400F7692B /* Foundation.framework in Frameworks */,
-				5C6BFC881588F79400F7692B /* CoreGraphics.framework in Frameworks */,
-				5C6BFCA41588F7AB00F7692B /* opencv2.framework in Frameworks */,
+				49A76FB024CB643400876489 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,15 +101,9 @@
 		5C6BFC821588F79400F7692B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5C89EC4D15E003AE002183F7 /* AssetsLibrary.framework */,
-				5C6BFCA31588F7AB00F7692B /* opencv2.framework */,
+				49A76FAF24CB643400876489 /* opencv2.framework */,
 				5CD8E83D15A222E700AB1240 /* Accelerate.framework */,
 				5C6BFCAF1588F7FA00F7692B /* AVFoundation.framework */,
-				5C6BFC871588F79400F7692B /* CoreGraphics.framework */,
-				5C6BFCB31588F80600F7692B /* CoreImage.framework */,
-				5C6BFCB11588F80000F7692B /* CoreMedia.framework */,
-				5C6BFCAD1588F7F300F7692B /* CoreVideo.framework */,
-				5C6BFCAB1588F7ED00F7692B /* QuartzCore.framework */,
 				5C6BFC851588F79400F7692B /* Foundation.framework */,
 				5C6BFC831588F79400F7692B /* UIKit.framework */,
 			);
@@ -177,6 +167,7 @@
 				5C6BFC7B1588F79400F7692B /* Sources */,
 				5C6BFC7C1588F79400F7692B /* Frameworks */,
 				5C6BFC7D1588F79400F7692B /* Resources */,
+				49A76FB224CB65CE00876489 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -193,15 +184,21 @@
 		5C6BFC761588F79300F7692B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
-				ORGANIZATIONNAME = "Eduard Feicho";
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					5C6BFC7E1588F79400F7692B = {
+						DevelopmentTeam = 55V4KQ8R32;
+					};
+				};
 			};
 			buildConfigurationList = 5C6BFC791588F79300F7692B /* Build configuration list for PBXProject "VideoConvolution" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 5C6BFC741588F79300F7692B;
 			productRefGroup = 5C6BFC801588F79400F7692B /* Products */;
@@ -255,7 +252,7 @@
 		5C6BFC981588F79400F7692B /* ViewController_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5C6BFC991588F79400F7692B /* en */,
+				49A76FAB24CB567800876489 /* Base */,
 			);
 			name = ViewController_iPhone.xib;
 			sourceTree = "<group>";
@@ -263,7 +260,7 @@
 		5C6BFC9B1588F79400F7692B /* ViewController_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5C6BFC9C1588F79400F7692B /* en */,
+				49A76FAC24CB567800876489 /* Base */,
 			);
 			name = ViewController_iPad.xib;
 			sourceTree = "<group>";
@@ -275,18 +272,35 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ENABLE_TESTABILITY = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../build/\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -301,7 +315,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/../../build/\"",
+					"@executable_path/Frameworks/opencv2.framework/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,18 +332,35 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ENABLE_TESTABILITY = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../build/\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -331,7 +368,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/../../build/\"",
+					"@executable_path/Frameworks/opencv2.framework/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -344,14 +387,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_CXX_LIBRARY = "libc++";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../build/\"",
-				);
+				DEVELOPMENT_TEAM = 55V4KQ8R32;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VideoConvolution/VideoConvolution-Prefix.pch";
 				INFOPLIST_FILE = "VideoConvolution/VideoConvolution-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = co.idwall.VConv;
 				PRODUCT_NAME = VideoConvolution;
 				WRAPPER_EXTENSION = app;
 			};
@@ -362,14 +404,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_CXX_LIBRARY = "libc++";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../build/\"",
-				);
+				DEVELOPMENT_TEAM = 55V4KQ8R32;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VideoConvolution/VideoConvolution-Prefix.pch";
 				INFOPLIST_FILE = "VideoConvolution/VideoConvolution-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = co.idwall.VConv;
 				PRODUCT_NAME = VideoConvolution;
 				WRAPPER_EXTENSION = app;
 			};
