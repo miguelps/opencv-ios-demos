@@ -58,7 +58,7 @@
 		5C6B74C915EBB317005B598B /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ViewController.mm; path = HelloIosVideo/ViewController.mm; sourceTree = SOURCE_ROOT; };
 		5C6B74CD15EBB323005B598B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = HelloIosVideo/en.lproj/MainStoryboard_iPad.storyboard; sourceTree = SOURCE_ROOT; };
 		5C6B74CF15EBB323005B598B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = HelloIosVideo/en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = SOURCE_ROOT; };
-		5C7C1B6115EB905A00AF0EBD /* HelloIosVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloIosVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C7C1B6115EB905A00AF0EBD /* Hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7C1B6515EB905A00AF0EBD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5C7C1B6715EB905A00AF0EBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5C7C1B6915EB905A00AF0EBD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -101,7 +101,7 @@
 		5C7C1B6215EB905A00AF0EBD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C7C1B6115EB905A00AF0EBD /* HelloIosVideo.app */,
+				5C7C1B6115EB905A00AF0EBD /* Hello.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 			);
 			name = HelloIosVideo;
 			productName = HelloIOS;
-			productReference = 5C7C1B6115EB905A00AF0EBD /* HelloIosVideo.app */;
+			productReference = 5C7C1B6115EB905A00AF0EBD /* Hello.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -296,6 +296,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = HelloIosVideo;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -334,6 +335,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = HelloIosVideo;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -354,7 +356,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloIosVideo/HelloIosVideo-Prefix.pch";
 				INFOPLIST_FILE = "HelloIosVideo/HelloIosVideo-Info.plist";
-				PRODUCT_NAME = HelloIosVideo;
+				PRODUCT_BUNDLE_IDENTIFIER = HelloIosVideo;
+				PRODUCT_NAME = Hello;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -373,7 +376,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloIosVideo/HelloIosVideo-Prefix.pch";
 				INFOPLIST_FILE = "HelloIosVideo/HelloIosVideo-Info.plist";
-				PRODUCT_NAME = HelloIosVideo;
+				PRODUCT_BUNDLE_IDENTIFIER = HelloIosVideo;
+				PRODUCT_NAME = Hello;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
