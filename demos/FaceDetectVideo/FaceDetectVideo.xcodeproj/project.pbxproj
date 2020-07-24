@@ -95,7 +95,7 @@
 		5CA03ED31AED9FA50015B2F5 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+RoundedCorner.h"; path = "../../shared/categories/UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		5CA03ED41AED9FA50015B2F5 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RoundedCorner.m"; path = "../../shared/categories/UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 		5CA03EE61AEDAF760015B2F5 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../build/opencv2.framework; sourceTree = "<group>"; };
-		5CE6B37D15821F17009E66E4 /* FaceDetectVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceDetectVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CE6B37D15821F17009E66E4 /* FaceDetect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceDetect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE6B38115821F17009E66E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5CE6B38315821F17009E66E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5CE6B38515821F17009E66E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -216,7 +216,7 @@
 		5CE6B37E15821F17009E66E4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5CE6B37D15821F17009E66E4 /* FaceDetectVideo.app */,
+				5CE6B37D15821F17009E66E4 /* FaceDetect.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,7 +256,7 @@
 			);
 			name = FaceDetectVideo;
 			productName = FaceDetectSimple;
-			productReference = 5CE6B37D15821F17009E66E4 /* FaceDetectVideo.app */;
+			productReference = 5CE6B37D15821F17009E66E4 /* FaceDetect.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -488,7 +488,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = "-mfpu=neon";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.opencv.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = FaceDetectVideo;
+				PRODUCT_NAME = FaceDetect;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -516,7 +516,7 @@
 					"-mfpu=neon",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.opencv.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = FaceDetectVideo;
+				PRODUCT_NAME = FaceDetect;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
