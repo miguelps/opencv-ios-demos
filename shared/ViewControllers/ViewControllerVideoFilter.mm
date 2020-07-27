@@ -11,12 +11,12 @@
 #import "imageFilter.h"
 #import "UIImageCVMatConverter.h"
 
-#ifdef __cplusplus
-#include <opencv2/imgproc/imgproc.hpp>
-#include <opencv2/core/core.hpp>
-using namespace cv;
-
-#endif
+//#ifdef __cplusplus
+//#include <opencv2/imgproc/imgproc.hpp>
+//#include <opencv2/core/core.hpp>
+//using namespace cv;
+//
+//#endif
 
 @interface ViewControllerVideoFilter ()
 
